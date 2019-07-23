@@ -1,0 +1,87 @@
+{
+    "name": "Report",
+    "options": {
+        "idInjection": true,
+        "mysql": {
+        "schema": "loopback-example-mysql",
+        "table": "report"
+        }
+    },
+    "properties": {
+        "id": {
+          "type": "Number",
+          "required": true,
+          "length": 10,
+          "precision": 10,
+          "scale": 0,
+          "mysql": {
+            "columnName": "id",
+            "dataType": "int",
+            "dataLength": null,
+            "dataPrecision": 10,
+            "dataScale": 0,
+            "nullable": "N"
+          }
+        },
+    "keluar": {
+        "type": "String",
+        "required": true,
+        "length": 50,
+        "precision": 10,
+        "scale": 0,
+        "mysql": {
+            "columnName": "keluar",
+            "dataType": "varchar",
+            "dataLength": 100,
+            "dataPrecision": 10,
+            "dataScale": 0,
+            "nullable": "N"
+        }
+    },
+    "masuk": {
+        "type": "String",
+        "required": true,
+        "length": 50,
+        "precision": 10,
+        "scale": 0,
+        "mysql": {
+          "columnName": "masuk",
+          "dataType": "varchar",
+          "dataLength": 100,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
+    },
+    "status": {
+        "type": "String",
+        "required": true,
+        "length": 50,
+        "precision": 10,
+        "scale": 0,
+        "mysql": {
+          "columnName": "status",
+          "dataType": "varchar",
+          "dataLength": 100,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
+    },
+    "keterangan": {
+        "type": "String",
+        "required": true,
+        "length": 50,
+        "precision": 10,
+        "scale": 0,
+        "mysql": {
+          "columnName": "keterangan",
+          "dataType": "varchar",
+          "dataLength": 100,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+             }
+        }
+    }
+}
