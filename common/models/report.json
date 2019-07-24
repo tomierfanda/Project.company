@@ -53,14 +53,14 @@
           "nullable": "N"
         }
     },
-    "status": {
+    "barang": {
         "type": "String",
         "required": true,
         "length": 50,
         "precision": 10,
         "scale": 0,
         "mysql": {
-          "columnName": "status",
+          "columnName": "barang",
           "dataType": "varchar",
           "dataLength": 100,
           "dataPrecision": 10,
