@@ -37,15 +37,19 @@
     "public": true
   },
   "Employee": {
-    "dataSource": "mysql",
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Project": {
+    "dataSource": "mongodb",
     "public": true
   },
   "Report": {
-    "dataSource": "mysql",
+    "dataSource": "mongodb",
     "public": true
   },
-  "Client": {
-    "dataSource": "mysql",
-    "public": true
+  "Roles" : {
+    "dataSource" : "mongodb",
+    "public" : true
   }
 }

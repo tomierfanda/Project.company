@@ -1,87 +1,23 @@
 {
-    "name": "Report",
-    "options": {
-        "idInjection": true,
-        "mysql": {
-        "schema": "loopback-example-mysql",
-        "table": "report"
-        }
+  "name": "Report",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "reportName": {
+      "type": "string"
     },
-    "properties": {
-        "id": {
-          "type": "Number",
-          "required": true,
-          "length": 10,
-          "precision": 10,
-          "scale": 0,
-          "mysql": {
-            "columnName": "id",
-            "dataType": "int",
-            "dataLength": null,
-            "dataPrecision": 10,
-            "dataScale": 0,
-            "nullable": "N"
-          }
-        },
-    "keluar": {
-        "type": "String",
-        "required": true,
-        "length": 50,
-        "precision": 10,
-        "scale": 0,
-        "mysql": {
-            "columnName": "keluar",
-            "dataType": "varchar",
-            "dataLength": 100,
-            "dataPrecision": 10,
-            "dataScale": 0,
-            "nullable": "N"
-        }
+    "status": {
+      "type": "string"
     },
-    "masuk": {
-        "type": "String",
-        "required": true,
-        "length": 50,
-        "precision": 10,
-        "scale": 0,
-        "mysql": {
-          "columnName": "masuk",
-          "dataType": "varchar",
-          "dataLength": 100,
-          "dataPrecision": 10,
-          "dataScale": 0,
-          "nullable": "N"
-        }
-    },
-    "barang": {
-        "type": "String",
-        "required": true,
-        "length": 50,
-        "precision": 10,
-        "scale": 0,
-        "mysql": {
-          "columnName": "barang",
-          "dataType": "varchar",
-          "dataLength": 100,
-          "dataPrecision": 10,
-          "dataScale": 0,
-          "nullable": "N"
-        }
-    },
-    "keterangan": {
-        "type": "String",
-        "required": true,
-        "length": 50,
-        "precision": 10,
-        "scale": 0,
-        "mysql": {
-          "columnName": "keterangan",
-          "dataType": "varchar",
-          "dataLength": 100,
-          "dataPrecision": 10,
-          "dataScale": 0,
-          "nullable": "N"
-             }
-        }
+    "createdAt": {
+      "type": "date"
     }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
 }

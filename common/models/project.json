@@ -1,0 +1,43 @@
+{
+    "name": "Project",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "projectName": {
+        "type": "string"
+      },
+      "capacity": {
+        "type": "number"
+      },
+        "starDate" : {
+        "type": "date"
+      },
+      "endDate": {
+        "type": "date"
+      },
+        "status" : {
+        "type": "string"
+      },
+      "paymentStatus": {
+        "type": "number"
+      },
+      "creatAt": {
+        "type": "date",
+        "defaultFn": "now"
+      }
+    },
+    "validations": [],
+    "relations": {
+      "employee" : {
+        "type" : "hasMany",
+        "model" : "Employee",
+        "foreignKey" : "projectId"
+      }
+    },
+    "acls": [],
+    "methods": {}
+  }
+  

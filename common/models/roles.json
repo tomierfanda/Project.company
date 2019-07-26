@@ -1,0 +1,30 @@
+{
+    "name": "Roles",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "rolesName": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string"
+      },
+      "createdAt": {
+        "type": "date"
+      }
+    },
+    "validations": [],
+    "relations": {
+        "employee" : {
+            "type" : "belongsTo",
+            "model" : "Employee",
+            "foreignKey" : "rolesId"
+        }
+    },
+    "acls": [],
+    "methods": {}
+  }
+  
